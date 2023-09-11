@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My WebSite</title>
+</head>
+<body class="main-body">
+    <nav class="header">
+        <img src="logo.png" alt="logo" class="header-logo">
+        <div class="header-title">Klern Kamel</div>
+        <div class="header-nav-items">
+        <ul class="main-ul">
+            <li>
+                <a>Menu href</a>
+                <ul class="dropdown">
+                    <li>
+                        <a href="">One</a>
+                    </li>
+                    <li>
+                        <a href="">Two</a>
+                    </li>
+                    <li>
+                        <a href="">Three</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="">Second href</a>
+            </li>
+            <li>
+                <a href="">Third href</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+    <main class="main">
+        <div class="hypers">
+            <ul>
+                <li>
+                    <a href="http://www.kubsu.ru/index.php" target="_blank">kubsu, absolut hyper</a>
+                </li>
+                <li>
+                    <a href="https://www.kubsu.ru/index.php" target="_blank">kubsu, https</a>
+                </li>
+                <li>
+                    <img src="img.jpg" width="200" height="200" alt=""/>
+                    <a href="img.jpg" id="img">No solutions?</a>
+                </li>
+                <li>
+                    <a href="/">Главная</a>
+                </li>
+                <li>
+                    <a  href="/bin">Внутреняя страница</a>
+                </li>
+                <li>
+                    <a href="#img">Фрагмент</a>
+                </li>
+                <li>
+                    <a href="https://www.ssilka.com?product=img&color=black&size=xl">3 параметра</a>
+                </li>
+                <li>
+                    <a href="http://site.com/page?id=2">Ссылка с параметром id</a>
+                </li>
+                <li>
+                    <a href="./">Относительная в текущем</a>
+                </li>
+                <li>
+                    <a href="./about.html">about</a>
+                </li>
+                <li>
+                    <a href="../">Относительная на католог выше</a>
+                </li>
+                <li>
+                    <a href="../../">Относительная на 2 каталога выше</a>
+                </li>
+                <li>
+                    <p>Посетите наш 
+                        <a href="https://www.kubsu.ru/index.php">основной</a> 
+                        сайт
+                    </p>
+                </li>
+                <li>
+                    <a href="https://www.kubsu.ru/index.php#section-content">Ссылка на фрагмент</a>
+                </li>
+                <li>
+                    <img src="cBtn.png" alt="" usemap="#circle" width="100" height="100">
+                    <map name="circle">
+                        <area shape="circle" coords="50,50,100" href="https://google.com/" alt="">
+                    </map>
+                </li>
+                <li>
+                    <img src="rBtn.png" alt="" usemap="#rect" width="200" height="180">
+                    <map name="rect">
+                        <area shape="rect" coords="5,65,195,110" href="https://google.com/" alt="">
+                    </map>
+                </li>
+                <li>
+                    <a href=" " >Пустая ссылка</a>
+                </li>
+                <li>
+                    <a title="Без href">Сcылка без href</a>
+                </li>
+                <li>
+                    <a href="https://google.com/" rel="nofollow">Переход поисковикам запрещен</a>
+                </li>
+                <li>
+                    <!--noindex-->
+                        <a href="https://google.com/" rel="nofollow">
+                            <p>Запрещена индексация</p>
+                        </a>
+                    <!--/noindex-->
+                </li>
+                <li>
+                    <a href="ftp://if0_34979105:nR88jWj7YkOE7@ftpupload.net/text.txt">ftp</a>
+                </li>
+            </ul>
+            <ol>
+                <li>
+                    <a href="https://google.com/" title="Первая ссылка">Ссылка</a>
+                </li>
+                <li>
+                    <a href="https://google.com/" title="Вторая ссылка">Ссылка</a>
+                </li>
+                <li>
+                    <a href="https://google.com/" title="Третья ссылка">Ссылка</a>
+                </li>
+            </ol>
+        </div>
+        <div class="table">
+            <div class="table-container">
+                <section class="table-header">
+                    <h1>Simple table</h1>
+                </section>
+                <div class="table-body">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>id</th>
+                                <th>Customer</th>
+                                <th>Location</th>
+                                <th>Order Date</th>
+                                <th>Status</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <img src="img.jpg" alt="img">
+                                    Maslov Kirill Vladimirovich
+                                </td>
+                                <td>
+                                    Krasnodar
+                                </td>
+                                <td>
+                                    11 September, 2023
+                                </td>
+                                <td>
+                                    <p class="status del">Delivered</p>
+                                </td>
+                                <td><strong>$300.0</strong></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <img src="img.jpg" alt="img">
+                                    Maslov Kirill Vladimirovich
+                                </td>
+                                <td>
+                                    Krasnodar
+                                </td>
+                                <td>
+                                    11 September, 2023
+                                </td>
+                                <td>
+                                    <p class="status can">Canceled</p>
+                                </td>
+                                <td><strong>$300.0</strong></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    <img src="img.jpg" alt="img">
+                                    Maslov Kirill Vladimirovich
+                                </td>
+                                <td>
+                                    Krasnodar
+                                </td>
+                                <td>
+                                    11 September, 2023
+                                </td>
+                                <td>
+                                    <p class="status ship">Shiped</p>
+                                </td>
+                                <td><strong>$300.0</strong></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>
+                                    <img src="img.jpg" alt="img">
+                                    Maslov Kirill Vladimirovich
+                                </td>
+                                <td>
+                                    Krasnodar
+                                </td>
+                                <td>
+                                    11 September, 2023
+                                </td>
+                                <td>
+                                    <p class="status del">Delivered</p>
+                                </td>
+                                <td><strong>$300.0</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="form-container">
+            <form action="#" method="get" class="lessons-form">
+                <div class="col">
+                    <label for="FIO">ФИО:</label>
+                    <input type="text" name="name-form" id="FIO" placeholder="Фамилия Имя Очество">
+                </div>
+                <br>
+                <div>
+                    <label for="tel">Телефон:</label>
+                    <input type="tel" name="tel-form" id="tel" placeholder="7900-000-0000" pattern="7[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    <small>Формат: 7XXX-XXX-XXXX</small>
+                </div>
+                <br>
+                <div>
+                    <label for="email">Ваш emal:</label>
+                    <input type="email" name="email-form" id="email">
+                </div>
+                <br>
+                <div>
+                    <label for="date">Дата рождения:</label>
+                    <input type="date" name="date-form" id="date">
+                </div>
+                <br>
+                <div>
+                    <fieldset>
+                        <legend>Ваш пол:</legend>
+                        <input type="radio" name="gender" id="male" value="Мужской" checked>
+                        <label for="male">Мужской</label>
+                        <div>
+                            <input type="radio" name="gender" id="female" value="Женский">
+                            <label for="female">Женский</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="gender" id="attack-helicopter" value="Вертолет">
+                            <label for="attack-helicopter">Attack Helicopter</label>
+                        </div>
+                    </fieldset>
+                    <br>
+                    <div>
+                        <label for="drop-down">Ваш любимый ЯП?</label>
+                        <select name="drop-down-form" id="drop-down">
+                            <option value="pascal">Pascal</option>
+                            <option value="c">C</option>
+                            <option value="c++">C++</option>
+                            <option value="javascript">JavaScript</option>
+                            <option value="php">PHP</option>
+                            <option value="python">Python</option>
+                            <option value="java">Java</option>
+                            <option value="haskel">Haskel</option>
+                            <option value="clojure">Clojure</option>
+                            <option value="prolog">Prolog</option>
+                            <option value="scala">Scala</option>
+                        </select>
+                    </div>
+                    <br>
+                    <fieldset>
+                        <legend>Биография:</legend>
+                        <textarea name="bio-form" id="bio" cols="40" rows="5"></textarea>
+                    </fieldset>
+                    <br>
+                    <div>
+                        <label for="checkbox">С контактом ознакомлен (а)</label>
+                        <input type="checkbox" name="checkbox-form" id="checkbox">
+                    </div>
+                    <br>
+                    <div>
+                        <input type="submit" value="Сохранить" name="buttn-form" id="buttn">
+                    </div>
+                </div>
+            </form>
+        </div>
+    
+        <div class="footer-container">
+            <footer>
+                <p class="footer-title">(c) Сергей Синица & Маслов Кирилл</p>
+            </footer>
+            
+        </div>
+            
+        
+    </main>
+</body>
+
+
+</html>
