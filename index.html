@@ -27,10 +27,10 @@
                 </ul>
             </li>
             <li>
-                <a href="">Second href</a>
+                <a href="#table">table</a>
             </li>
             <li>
-                <a href="">Third href</a>
+                <a href="#form">form</a>
             </li>
         </ul>
         </div>
@@ -65,16 +65,16 @@
                         <a href="http://site.com/page?id=2">Ссылка с параметром id</a>
                     </li>
                     <li>
-                        <a href="./">Относительная в текущем</a>
+                        <a href="./index.html">Относительная в текущем</a>
                     </li>
                     <li>
                         <a href="./about.html">about</a>
                     </li>
                     <li>
-                        <a href="../">Относительная на католог выше</a>
+                        <a href="./upper-one/upper-one.html">Относительная на католог выше</a>
                     </li>
                     <li>
-                        <a href="../../">Относительная на 2 каталога выше</a>
+                        <a href="./upper-one/upper-two/upper-two.html">Относительная на 2 каталога выше</a>
                     </li>
                     <li>
                         <p>Посетите наш 
@@ -86,16 +86,17 @@
                         <a href="https://www.kubsu.ru/index.php#section-content">Ссылка на фрагмент</a>
                     </li>
                     <li>
-                        <img src="cBtn.png" alt="" usemap="#circle" width="100" height="100">
-                        <map name="circle">
-                            <area shape="circle" coords="50,50,100" href="https://google.com/" alt="">
-                        </map>
-                    </li>
-                    <li>
-                        <img src="rBtn.png" alt="" usemap="#rect" width="200" height="180">
-                        <map name="rect">
-                            <area shape="rect" coords="5,65,195,110" href="https://google.com/" alt="">
-                        </map>
+                        <div>
+                            <img src="cBtn.png" alt="" usemap="#circle" width="100" height="100">
+                            <map name="circle">
+                             <area shape="circle" coords="50,50,100" href="https://google.com/" alt="">
+                            </map>
+                            <img src="rBtn.png" alt="" usemap="#rect" width="200" height="180">
+                            <map name="rect">
+                                <area shape="rect" coords="5,65,195,110" href="https://google.com/" alt="">
+                            </map>
+                        </div>
+                        
                     </li>
                     <li>
                         <a href=" " >Пустая ссылка</a>
@@ -138,6 +139,9 @@
                         <table>
                             <thead>
                                 <tr>
+                                    <th colspan="6">My Table</th>
+                                </tr>
+                                <tr>
                                     <th>id</th>
                                     <th>Customer</th>
                                     <th>Location</th>
@@ -153,12 +157,10 @@
                                         <img src="img.jpg" alt="img">
                                         Maslov Kirill Vladimirovich
                                     </td>
-                                    <td>
-                                        Krasnodar
+                                    <td colspan="2">
+                                        Krasnodar,  11 September, 2023
                                     </td>
-                                    <td>
-                                        11 September, 2023
-                                    </td>
+                                    
                                     <td>
                                         <p class="status del">Delivered</p>
                                     </td>
@@ -170,11 +172,8 @@
                                         <img src="img.jpg" alt="img">
                                         Maslov Kirill Vladimirovich
                                     </td>
-                                    <td>
-                                        Krasnodar
-                                    </td>
-                                    <td>
-                                        11 September, 2023
+                                    <td colspan="2">
+                                        Krasnodar, 11 September, 2023
                                     </td>
                                     <td>
                                         <p class="status can">Canceled</p>
@@ -258,23 +257,23 @@
                 <form action="#" method="get" class="lessons-form">
                     <div class="col">
                         <label for="FIO">ФИО:</label>
-                        <input type="text" name="name-form" id="FIO" placeholder="Фамилия Имя Очество">
+                        <input type="text" name="name-form" id="FIO" placeholder="Фамилия Имя Очество" required>
                     </div>
                     <br>
                     <div>
                         <label for="tel">Телефон:</label>
-                        <input type="tel" name="tel-form" id="tel" placeholder="7900-000-0000" pattern="7[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        <input type="tel" name="tel-form" id="tel" placeholder="7900-000-0000" pattern="7[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                         <small>Формат: 7XXX-XXX-XXXX</small>
                     </div>
                     <br>
                     <div>
                         <label for="email">Ваш emal:</label>
-                        <input type="email" name="email-form" id="email">
+                        <input type="email" name="email-form" id="email" required>
                     </div>
                     <br>
                     <div>
                         <label for="date">Дата рождения:</label>
-                        <input type="date" name="date-form" id="date">
+                        <input type="date" name="date-form" id="date" required>
                     </div>
                     <br>
                     <div>
@@ -294,7 +293,7 @@
                         <br>
                         <div>
                             <label for="drop-down">Ваш любимый ЯП?</label>
-                            <select name="drop-down-form" id="drop-down">
+                            <select name="drop-down-form" id="drop-down" required>
                                 <option value="pascal">Pascal</option>
                                 <option value="c">C</option>
                                 <option value="c++">C++</option>
@@ -316,7 +315,7 @@
                         <br>
                         <div>
                             <label for="checkbox">С контактом ознакомлен (а)</label>
-                            <input type="checkbox" name="checkbox-form" id="checkbox">
+                            <input type="checkbox" name="checkbox-form" id="checkbox" required>
                         </div>
                         <br>
                         <div>
